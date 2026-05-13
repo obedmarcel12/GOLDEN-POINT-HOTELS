@@ -135,7 +135,7 @@
                 </p>
               </div>
 
-              <form>
+              <form action="booking.php" method="POST">
                 <div class="booking-form-body">
                   <div class="row g-4">
                     <div class="col-md-6">
@@ -144,6 +144,7 @@
                         <i class="bi bi-person"></i>
                         <input
                           type="text"
+                          name="full_name"
                           class="form-control"
                           placeholder="Enter full name"
                           required
@@ -157,6 +158,7 @@
                         <i class="bi bi-envelope"></i>
                         <input
                           type="email"
+                          name="email"
                           class="form-control"
                           placeholder="Enter email address"
                           required
@@ -170,6 +172,7 @@
                         <i class="bi bi-telephone"></i>
                         <input
                           type="tel"
+                          name="phone"
                           class="form-control"
                           placeholder="+234..."
                           required
@@ -182,7 +185,11 @@
                       <label class="form-label fw-bold">Room Type</label>
                       <div class="input-icon-wrap">
                         <i class="bi bi-door-open"></i>
-                        <select class="form-select" id="roomSelect">
+                        <select
+                          class="form-select"
+                          id="roomSelect"
+                          name="room_id"
+                        >
                           <option value="classic-room" data-price="55000">
                             Classic Room
                           </option>
@@ -211,6 +218,7 @@
                         <i class="bi bi-calendar-check"></i>
                         <input
                           type="date"
+                          name="checkin"
                           class="form-control"
                           id="checkin"
                           required
@@ -224,6 +232,7 @@
                         <i class="bi bi-calendar2-check"></i>
                         <input
                           type="date"
+                          name="checkout"
                           class="form-control"
                           id="checkout"
                           required
@@ -236,11 +245,11 @@
                       <label class="form-label fw-bold">Guests</label>
                       <div class="input-icon-wrap">
                         <i class="bi bi-people"></i>
-                        <select class="form-select" id="guests">
-                          <option>1 Guest</option>
-                          <option selected>2 Guests</option>
-                          <option>3 Guests</option>
-                          <option>4 Guests</option>
+                        <select class="form-select" id="guests" name="guests">
+                          <option value="1 Guest">1 Guest</option>
+                          <option value="2 Guests" selected>2 Guests</option>
+                          <option value="3 Guests">3 Guests</option>
+                          <option value="4 Guests">4 Guests</option>
                         </select>
                       </div>
                     </div>
@@ -251,6 +260,7 @@
                         <i class="bi bi-chat-left-text"></i>
                         <input
                           type="text"
+                          name="special_request"
                           class="form-control"
                           placeholder="Optional request"
                         />
@@ -258,7 +268,22 @@
                     </div>
                   </div>
 
+                  <!-- Hidden values for PHP email -->
+                  <input type="hidden" id="selectedRoomName" name="room_name" />
+                  <input
+                    type="hidden"
+                    id="selectedRoomPrice"
+                    name="room_price"
+                  />
+                  <input type="hidden" id="selectedNights" name="nights" />
+                  <input
+                    type="hidden"
+                    id="selectedTotalPrice"
+                    name="total_price"
+                  />
+
                   <button
+                    type="submit"
                     class="btn btn-warning rounded-0 w-100 mt-4 py-3 fw-bold booking-submit"
                   >
                     Confirm Booking
@@ -490,13 +515,16 @@
       const guestCount = document.getElementById("guestCount");
       const nightsDisplay = document.getElementById("nights");
 
+      const selectedRoomName = document.getElementById("selectedRoomName");
+      const selectedRoomPrice = document.getElementById("selectedRoomPrice");
+      const selectedNights = document.getElementById("selectedNights");
+      const selectedTotalPrice = document.getElementById("selectedTotalPrice");
+
       function updateBooking() {
         const selectedOption = roomSelect.options[roomSelect.selectedIndex];
 
         const selectedText = selectedOption.textContent.trim();
-        const price = Number(
-          selectedOption.dataset.price || selectedOption.value,
-        );
+        const price = Number(selectedOption.dataset.price || 0);
 
         roomName.textContent = selectedText;
         roomPrice.textContent = "₦" + price.toLocaleString();
@@ -504,17 +532,26 @@
         guestCount.textContent = guests.value;
 
         let nights = 1;
+
         if (checkin.value && checkout.value) {
           const inDate = new Date(checkin.value);
           const outDate = new Date(checkout.value);
           const diff = (outDate - inDate) / (1000 * 60 * 60 * 24);
-          if (diff > 0) nights = diff;
+
+          if (diff > 0) {
+            nights = diff;
+          }
         }
 
         nightsDisplay.textContent = nights;
 
         const total = price * nights;
         totalPrice.textContent = "₦" + total.toLocaleString();
+
+        selectedRoomName.value = selectedText;
+        selectedRoomPrice.value = price;
+        selectedNights.value = nights;
+        selectedTotalPrice.value = total;
       }
 
       roomSelect.addEventListener("change", updateBooking);
