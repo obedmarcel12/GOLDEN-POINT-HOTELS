@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking | Golden Point</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="images/golden-point-logo.jfif" />
+
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div id="home" class="top-bar">
+      <div
+        class="container top-bar-inner d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="top-contact d-flex align-items-center gap-3">
+          <div class="top-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a
+              href="mailto:reservation@goldenpointhotel.com"
+              class="text-decoration-none"
+            >
+              reservation@goldenpointhotel.com
+            </a>
+          </div>
+
+          <span class="top-divider"></span>
+
+          <div class="top-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+2349033138963" class="text-decoration-none">
+              +234 903 313 8963
+            </a>
+          </div>
+        </div>
+
+        <div class="top-socials">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/golden-point-logo.jfif" alt="ACCIMA Logo" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="room.html">Rooms & Suites</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+
+            <!-- CTA Button -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="book-btn nav-link" href="room.html"> Book Now </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BOOKING -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-5">
+          <!-- FORM -->
+          <div class="col-lg-7">
+            <div class="booking-form-card shadow-lg">
+              <div class="booking-form-head">
+                <span class="form-label-gold">Reservation Details</span>
+                <h4 class="fw-bold mb-0">Complete Your Booking</h4>
+                <p class="text-muted mb-0">
+                  Enter your details below and our team will prepare your
+                  reservation.
+                </p>
+              </div>
+
+              <form>
+                <div class="booking-form-body">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Full Name</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-person"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter full name"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Email Address</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-envelope"></i>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter email address"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Phone Number</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-telephone"></i>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          placeholder="+234..."
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <!-- ROOM SELECT -->
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Room Type</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-door-open"></i>
+                        <select class="form-select" id="roomSelect">
+                          <option value="classic-room" data-price="55000">
+                            Classic Room
+                          </option>
+                          <option value="classic-pentagon" data-price="55000">
+                            Classic Pentagon
+                          </option>
+                          <option value="double-pentagon" data-price="120000">
+                            Double Pentagon
+                          </option>
+                          <option value="deluxe-room" data-price="60000">
+                            Deluxe Room
+                          </option>
+                          <option value="executive-room" data-price="70000">
+                            Executive Room
+                          </option>
+                          <option value="premium-suites" data-price="90000">
+                            Premium Suites
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Check-in</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-calendar-check"></i>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="checkin"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Check-out</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-calendar2-check"></i>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="checkout"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <!-- GUESTS -->
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Guests</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-people"></i>
+                        <select class="form-select" id="guests">
+                          <option>1 Guest</option>
+                          <option selected>2 Guests</option>
+                          <option>3 Guests</option>
+                          <option>4 Guests</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label fw-bold">Special Request</label>
+                      <div class="input-icon-wrap">
+                        <i class="bi bi-chat-left-text"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Optional request"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-warning rounded-0 w-100 mt-4 py-3 fw-bold booking-submit"
+                  >
+                    Confirm Booking
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- SUMMARY -->
+          <div class="col-lg-5">
+            <div class="booking-summary shadow-lg">
+              <div class="summary-top">
+                <span class="summary-label">Your Stay</span>
+                <h4 class="fw-bold mb-0">Booking Summary</h4>
+              </div>
+
+              <div class="summary-room">
+                <div>
+                  <small>Selected Room</small>
+                  <h5 id="roomName" class="mb-0">Classic Room</h5>
+                </div>
+
+                <i class="bi bi-building-check"></i>
+              </div>
+
+              <div class="summary-list">
+                <div class="summary-row">
+                  <span>
+                    <i class="bi bi-cash-coin"></i>
+                    Price / Night
+                  </span>
+                  <strong id="roomPrice">₦55,000</strong>
+                </div>
+
+                <div class="summary-row">
+                  <span>
+                    <i class="bi bi-people"></i>
+                    Guests
+                  </span>
+                  <strong id="guestCount">2 Guests</strong>
+                </div>
+
+                <div class="summary-row">
+                  <span>
+                    <i class="bi bi-moon-stars"></i>
+                    Nights
+                  </span>
+                  <strong id="nights">1</strong>
+                </div>
+              </div>
+
+              <div class="summary-total">
+                <span>Total Payment</span>
+                <strong id="totalPrice">₦55,000</strong>
+              </div>
+
+              <p class="summary-note mb-0">
+                <i class="bi bi-shield-check"></i>
+                Your reservation details will be reviewed by Golden Point Hotel
+                and Suites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white pt-5 pb-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Hotel Info -->
+          <div class="col-lg-3">
+            <img
+              src="images/golden-point-logo.jfif"
+              alt="Golden Point Logo"
+              class="mb-3"
+              style="height: 70px"
+            />
+
+            <p class="text-light">
+              Experience luxury, comfort, and world-class hospitality in the
+              heart of Enugu.
+            </p>
+
+            <!-- Social -->
+            <div>
+              <a href="#" class="text-white me-3 fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-3 fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#home"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="room.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Rooms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-light text-decoration-none d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled text-light">
+              <li class="mb-2">Luxury Rooms</li>
+              <li class="mb-2">24/7 Room Service</li>
+              <li class="mb-2">Free Wi-Fi</li>
+              <li class="mb-2">Restaurant & Bar</li>
+              <li>Event Hall</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+
+            <p class="mb-2">
+              <i class="bi bi-geo-alt-fill text-warning"></i>
+              30b, 16 Uduma St, New Heaven, Enugu 400102, Enugu, Nigeria
+            </p>
+
+            <p class="mb-2">
+              <i class="bi bi-telephone-fill text-warning"></i>
+              <a
+                href="tel:+2349033138963"
+                class="text-light text-decoration-none"
+              >
+                +234 903 313 8963
+              </a>
+            </p>
+
+            <p class="mb-3">
+              <i class="bi bi-envelope-fill text-warning"></i>
+              <a
+                href="mailto:reservation@goldenpointhotel.com"
+                class="text-light text-decoration-none email-break"
+              >
+                reservation@goldenpointhotel.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center">
+          <p class="mb-0 text-light">
+            © 2026 Golden Point Hotel & Suites. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+
+      const roomFromURL = params.get("room");
+      const priceFromURL = params.get("price");
+
+      const roomSelected = document.getElementById("roomSelect");
+
+      if (roomFromURL && priceFromURL) {
+        for (let option of roomSelected.options) {
+          if (
+            option.textContent.trim().toLowerCase() ===
+            roomFromURL.trim().toLowerCase()
+          ) {
+            option.selected = true;
+            break;
+          }
+        }
+      }
+    </script>
+
+    <!--  -->
+
+    <script>
+      const roomSelect = document.getElementById("roomSelect");
+      const roomName = document.getElementById("roomName");
+      const roomPrice = document.getElementById("roomPrice");
+      const totalPrice = document.getElementById("totalPrice");
+
+      const checkin = document.getElementById("checkin");
+      const checkout = document.getElementById("checkout");
+
+      const guests = document.getElementById("guests");
+      const guestCount = document.getElementById("guestCount");
+      const nightsDisplay = document.getElementById("nights");
+
+      function updateBooking() {
+        const selectedOption = roomSelect.options[roomSelect.selectedIndex];
+
+        const selectedText = selectedOption.textContent.trim();
+        const price = Number(
+          selectedOption.dataset.price || selectedOption.value,
+        );
+
+        roomName.textContent = selectedText;
+        roomPrice.textContent = "₦" + price.toLocaleString();
+
+        guestCount.textContent = guests.value;
+
+        let nights = 1;
+        if (checkin.value && checkout.value) {
+          const inDate = new Date(checkin.value);
+          const outDate = new Date(checkout.value);
+          const diff = (outDate - inDate) / (1000 * 60 * 60 * 24);
+          if (diff > 0) nights = diff;
+        }
+
+        nightsDisplay.textContent = nights;
+
+        const total = price * nights;
+        totalPrice.textContent = "₦" + total.toLocaleString();
+      }
+
+      roomSelect.addEventListener("change", updateBooking);
+      checkin.addEventListener("change", updateBooking);
+      checkout.addEventListener("change", updateBooking);
+      guests.addEventListener("change", updateBooking);
+
+      updateBooking();
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

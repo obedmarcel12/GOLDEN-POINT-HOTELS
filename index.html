@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Point Hotel & Suites</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font (Luxury Feel) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="images/golden-point-logo.jfif" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div id="home" class="top-bar">
+      <div
+        class="container top-bar-inner d-flex align-items-center justify-content-between flex-wrap"
+      >
+        <div class="top-contact d-flex align-items-center gap-3">
+          <div class="top-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a
+              href="mailto:reservation@goldenpointhotel.com"
+              class="text-decoration-none"
+            >
+              reservation@goldenpointhotel.com
+            </a>
+          </div>
+
+          <span class="top-divider"></span>
+
+          <div class="top-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:+2349033138963" class="text-decoration-none">
+              +234 903 313 8963
+            </a>
+          </div>
+        </div>
+
+        <div class="top-socials">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/golden-point-logo.jfif" alt="ACCIMA Logo" />
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="room.html">Rooms & Suites</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <!-- CTA Button -->
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="book-btn nav-link" href="room.html"> Book Now </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 🔶 PREMIUM HERO CAROUSEL -->
+    <section class="hero-section">
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="5500"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators hero-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="images/outside-view golden point.png"
+              class="d-block w-100 hero-img"
+              alt="Golden Point Hotel and Suites"
+            />
+
+            <div class="Overlay-Div-Hero"></div>
+
+            <div class="carousel-caption hero-caption">
+              <span class="hero-label">WELCOME TO GOLDEN POINT</span>
+
+              <h1 class="display-3 fw-bold">Golden Point Hotel & Suites</h1>
+
+              <p class="hero-text">
+                Experience comfort, class, and premium hospitality in the heart
+                of Enugu.
+              </p>
+
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a
+                  href="#about"
+                  class="btn btn-outline-light rounded-0 btn-lg fw-bold px-5"
+                >
+                  Explore More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="images/IMG_1075 copy.jpg"
+              class="d-block w-100 hero-img"
+              alt="Luxury room at Golden Point Hotel"
+            />
+
+            <div class="Overlay-Div-Hero"></div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="images/golden-point-main-hero-img.png"
+              class="d-block w-100 hero-img"
+              alt="Golden Point Hotel pool and leisure area"
+            />
+
+            <div class="Overlay-Div-Hero"></div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev hero-control"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next hero-control"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="home-about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Image -->
+          <div class="col-lg-6">
+            <div class="about-image-wrap">
+              <img
+                src="images/golden-point-reception.JPG"
+                class="about-main-img"
+                alt="Golden Point Hotel reception"
+              />
+
+              <div class="about-badge">
+                <span>Premium</span>
+                <strong>Hospitality</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="col-lg-6">
+            <div class="about-content">
+              <h6 class="text-warning fw-bold about-subtitle">ABOUT US</h6>
+
+              <h2 class="fw-bold mb-4">
+                Welcome to Golden Point Hotel & Suites
+              </h2>
+
+              <p class="text-muted">
+                Golden Point Hotel & Suites offers a perfect blend of luxury,
+                comfort, and exceptional service. Located in the heart of Enugu,
+                we provide world-class accommodation designed to meet the needs
+                of both business and leisure guests.
+              </p>
+
+              <p class="text-muted">
+                Our commitment is to deliver unforgettable experiences through
+                elegant rooms, modern facilities, and outstanding hospitality.
+              </p>
+
+              <div class="row g-3 align-items-center my-4">
+                <div class="col-sm-6">
+                  <div class="about-feature">
+                    <i class="bi bi-building-check"></i>
+                    <span>Elegant Rooms</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="about-feature">
+                    <i class="bi bi-cup-hot"></i>
+                    <span>Dining & Leisure</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <div class="about-feature">
+                    <i class="bi bi-geo-alt"></i>
+                    <span class="text-wrap"
+                      >30b, 16 Uduma St, New Heaven, Enugu 400102, Enugu,
+                      Nigeria</span
+                    >
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="about-feature">
+                    <i class="bi bi-clock-history"></i>
+                    <span>24/7 Guest Support</span>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <a
+                    href="about.html"
+                    class="btn btn-warning about-btn px-4 mt-3"
+                  >
+                    Learn More
+                    <i class="bi bi-arrow-right ms-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR ROOMS -->
+    <section class="home-rooms-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+          <h6 class="text-warning fw-bold rooms-subtitle">OUR ROOMS</h6>
+          <h2 class="fw-bold rooms-title">Explore Our Luxury Rooms</h2>
+          <p class="rooms-text mx-auto">
+            Choose from carefully prepared rooms and suites designed for
+            comfort, privacy, and a premium stay in Enugu.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Deluxe Room -->
+          <div class="col-md-6 col-lg-4">
+            <div class="room-card">
+              <div class="room-img">
+                <img src="images/deluxe-golden-point.jfif" alt="Deluxe Room" />
+              </div>
+
+              <div class="room-content">
+                <h5>Deluxe Room</h5>
+                <p>
+                  Modern luxury room designed for comfort, calm relaxation, and
+                  a smooth hotel experience.
+                </p>
+
+                <div class="room-bottom">
+                  <span class="room-price">₦60,000 <small>/ night</small></span>
+                  <a href="deluxe-room.html" class="room-link">
+                    View
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Executive Room -->
+          <div class="col-md-6 col-lg-4">
+            <div class="room-card featured-room">
+              <div class="room-img">
+                <img
+                  src="images/executive room 2 golden point.jfif"
+                  alt="Executive Room"
+                />
+              </div>
+
+              <div class="room-content">
+                <h5>Executive Room</h5>
+                <p>
+                  Premium experience ideal for business guests, leisure stays,
+                  and stylish relaxation.
+                </p>
+
+                <div class="room-bottom">
+                  <span class="room-price">₦70,000 <small>/ night</small></span>
+                  <a href="executive-room.html" class="room-link">
+                    View
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Suites -->
+          <div class="col-md-6 col-lg-4">
+            <div class="room-card">
+              <div class="room-img">
+                <img
+                  src="images/premium suite 2 golden point.jfif"
+                  alt="Premium Suites"
+                />
+              </div>
+
+              <div class="room-content">
+                <h5>Premium Suites</h5>
+                <p>
+                  Spacious suite experience with elegant interiors, privacy, and
+                  elevated comfort.
+                </p>
+
+                <div class="room-bottom">
+                  <span class="room-price">₦90,000 <small>/ night</small></span>
+                  <a href="premium-suite.html" class="room-link">
+                    View
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-5">
+          <a href="room.html" class="btn btn-warning about-btn px-4 mt-3">
+            View All Rooms
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DINING SECTION -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7">
+            <h2 class="section-subtitle">Dining & Leisure</h2>
+            <h2 class="section-title">
+              Everything You Need for a Relaxed and Memorable Stay
+            </h2>
+          </div>
+
+          <div class="col-lg-5">
+            <p class="experience-intro">
+              From delicious meals and refreshing drinks to poolside relaxation,
+              complimentary breakfast, and a premium VIP bar experience, every
+              moment is designed for comfort.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="experience-card">
+              <div class="experience-img">
+                <img src="images/IMG_3050.JPG" alt="Restaurant" />
+              </div>
+              <div class="experience-content">
+                <i class="bi bi-cup-hot-fill"></i>
+                <h4>Bar</h4>
+                <p>
+                  Enjoy freshly prepared local and continental dishes in a calm,
+                  welcoming dining space.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="experience-card">
+              <div class="experience-img">
+                <img
+                  src="images/pool-view-goldenpoint-night-enhanced.jpg"
+                  alt="POOL Bar"
+                />
+              </div>
+              <div class="experience-content">
+                <i class="bi bi-cup-straw"></i>
+                <h4>Open Bar</h4>
+                <p>
+                  Unwind with premium drinks, good music, and a stylish
+                  atmosphere made for relaxation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="experience-card">
+              <div class="experience-img">
+                <img
+                  src="images/golden-point-main-hero-img.png"
+                  alt="Swimming Pool"
+                />
+              </div>
+              <div class="experience-content">
+                <i class="bi bi-water"></i>
+                <h4>Swimming Pool</h4>
+                <p>
+                  Relax, cool off, and enjoy refreshing poolside moments during
+                  your stay.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a
+            href="experience.html"
+            class="btn btn-warning experience-btn px-4 mt-3"
+          >
+            View More
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="home-gallery-section">
+      <div class="container">
+        <!-- Title -->
+        <div class="text-center mb-5">
+          <h6 class="text-warning fw-bold gallery-subtitle">GALLERY</h6>
+          <h2 class="fw-bold gallery-title">Explore Our Hotel</h2>
+          <p class="gallery-text mx-auto">
+            Take a closer look at the rooms, leisure spaces, dining areas, and
+            relaxing atmosphere at Golden Point Hotel and Suites.
+          </p>
+        </div>
+
+        <div class="row g-4 gallery">
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img src="images/about-room.jfif" alt="Golden Point Hotel view" />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img src="images/IMG_1073.jpg" alt="Golden Point Hotel room" />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/GALATASARY-1.jfif"
+                alt="Golden Point Hotel space"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/IMG_3063.JPG"
+                alt="Golden Point Hotel interior"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/restaurant-main.jfif"
+                alt="Golden Point Hotel area"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/IMG_20260510_220057.jpg"
+                alt="Golden Point Hotel lounge"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/GALATASARY-2.jfif"
+                alt="Golden Point Hotel dining"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="gallery-card">
+              <img
+                src="images/IMG_3060.JPG"
+                alt="Golden Point Hotel exterior"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center mt-5">
+          <a
+            href="gallery.html"
+            class="btn btn-warning rounded-0 about-btn px-4 mt-3"
+          >
+            View Full Gallery
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔶 PREMIUM CONTACT SECTION -->
+    <section class="contact-section text-white position-relative">
+      <div class="overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <!-- Left Content -->
+          <div class="col-lg-6">
+            <h6 class="text-warning fw-bold">CONTACT US</h6>
+            <h2 class="fw-bold display-5 mb-3">
+              Experience Luxury at Golden Point
+            </h2>
+
+            <p class="text-light mb-4">
+              Book your stay today and enjoy world-class comfort, elegance, and
+              premium hospitality in Enugu.
+            </p>
+
+            <!-- Info Cards -->
+            <div class="mb-3 d-flex align-items-start">
+              <i class="bi bi-geo-alt-fill text-warning fs-4 me-3"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Location</h6>
+                <small
+                  >30b, 16 Uduma St, New Heaven, Enugu 400102, Enugu,
+                  Nigeria</small
+                >
+              </div>
+            </div>
+
+            <div class="mb-3 d-flex align-items-start">
+              <i class="bi bi-telephone-fill text-warning fs-4 me-3"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Call Us</h6>
+                <a
+                  href="tel:+2349033138963"
+                  class="text-light text-decoration-none"
+                >
+                  +234 903 313 8963
+                </a>
+              </div>
+            </div>
+
+            <div class="mb-4 d-flex align-items-start">
+              <i class="bi bi-envelope-fill text-warning fs-4 me-3"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Email</h6>
+                <a
+                  href="mailto:reservation@goldenpointhotel.com"
+                  class="text-light text-decoration-none email-break"
+                >
+                  reservation@goldenpointhotel.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Extra -->
+            <p class="text-light mb-4">
+              <i class="bi bi-clock-fill text-warning me-2"></i>
+              Open 24 Hours • 7 Days a Week
+            </p>
+
+            <a href="booking.html" class="btn btn-warning px-5 py-2 fw-bold">
+              Book Now
+            </a>
+          </div>
+
+          <!-- Right Form -->
+          <div class="col-lg-6">
+            <div
+              class="home-contact-form bg-white text-dark p-4 p-md-5 shadow-lg"
+            >
+              <h3 class="fw-bold mb-2">Send Us a Message</h3>
+
+              <p class="text-muted mb-4">
+                Fill the form below and our team will get back to you as soon as
+                possible.
+              </p>
+
+              <form action="contact.php" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Full Name</label>
+                    <input
+                      type="text"
+                      name="full_name"
+                      class="form-control"
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Phone Number</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form-control"
+                      placeholder="+234..."
+                    />
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label fw-bold">Subject</label>
+                    <input
+                      type="text"
+                      name="subject"
+                      class="form-control"
+                      placeholder="What is your message about?"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-bold">Message</label>
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Write your message here"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-0 w-100 py-3 fw-bold"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔶 BIG MAP -->
+    <section>
+      <div class="container-fluid p-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.530318555911!2d7.52044097481042!3d6.454282623964205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3002cd454bd%3A0x48363a2199f8e3b8!2sGolden%20Point%20Hotel%20%26%20Suites%20Enugu!5e0!3m2!1sen!2sng!4v1778008069993!5m2!1sen!2sng"
+          style="border: 0; width: 100%; height: 80vh"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white pt-5 pb-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Hotel Info -->
+          <div class="col-lg-3">
+            <img
+              src="images/golden-point-logo.jfif"
+              alt="Golden Point Logo"
+              class="mb-3"
+              style="height: 70px"
+            />
+
+            <p class="text-light">
+              Experience luxury, comfort, and world-class hospitality in the
+              heart of Enugu.
+            </p>
+
+            <!-- Social -->
+            <div>
+              <a href="#" class="text-white me-3 fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-3 fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white fs-5"
+                ><i class="bi bi-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#home"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="room.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Rooms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-light text-decoration-none d-block"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Our Services</h5>
+            <ul class="list-unstyled text-light">
+              <li class="mb-2">Luxury Rooms</li>
+              <li class="mb-2">24/7 Room Service</li>
+              <li class="mb-2">Free Wi-Fi</li>
+              <li class="mb-2">Restaurant & Bar</li>
+              <li>Event Hall</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+
+            <p class="mb-2">
+              <i class="bi bi-geo-alt-fill text-warning"></i>
+              30b, 16 Uduma St, New Heaven, Enugu 400102, Enugu, Nigeria
+            </p>
+
+            <p class="mb-2">
+              <i class="bi bi-telephone-fill text-warning"></i>
+              <a
+                href="tel:+2349033138963"
+                class="text-light text-decoration-none"
+              >
+                +234 903 313 8963
+              </a>
+            </p>
+
+            <p class="mb-3">
+              <i class="bi bi-envelope-fill text-warning"></i>
+              <a
+                href="mailto:reservation@goldenpointhotel.com"
+                class="text-light text-decoration-none email-break"
+              >
+                reservation@goldenpointhotel.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center">
+          <p class="mb-0 text-light">
+            © 2026 Golden Point Hotel & Suites. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 🔶 BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

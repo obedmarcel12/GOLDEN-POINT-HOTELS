@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Top Bar */
+.top-bar {
+  background: radial-gradient(#080606, rgb(215, 234, 209));
+  /* background: #0e0e0b; */
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+}
+
+.top-bar a {
+  color: #fff;
+}
+
+.top-bar a:hover {
+  color: #d4a017;
+}
+
+.top-bar-inner {
+  gap: 18px;
+  flex-wrap: nowrap !important;
+}
+
+.top-contact {
+  min-width: 0;
+  flex-wrap: nowrap !important;
+  gap: 14px !important;
+}
+
+.top-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.top-contact-item i,
+.top-socials i {
+  color: #d4a017;
+}
+
+.top-divider {
+  width: 1px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.top-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.top-socials a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+/* LOGO IMAGE */
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.book-btn {
+  background: radial-gradient(#080606, rgb(215, 234, 209));
+  color: #ffffff !important;
+  padding: 10px 20px !important;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: goldenrod;
+  color: #000 !important;
+}
+
+footer a:hover {
+  color: #c9a646 !important;
+}
+
+.email-break {
+  word-break: break-all;
+}
+
+.booking-summary {
+  position: sticky;
+  top: 100px;
+  background: linear-gradient(145deg, #111 0%, #1c1c1c 55%, #2a2108 100%);
+  color: #fff;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(212, 160, 23, 0.35);
+}
+
+.summary-top {
+  padding: 32px 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.summary-label {
+  display: inline-block;
+  color: #d4a017;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.summary-room {
+  margin: 30px 35px 20px;
+  padding: 25px;
+  background-color: rgba(212, 160, 23, 0.12);
+  border-left: 4px solid #d4a017;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-room small {
+  color: #d4a017;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.summary-room i {
+  font-size: 2.2rem;
+  color: #d4a017;
+}
+
+.summary-list {
+  padding: 0 35px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.summary-row span {
+  color: #d7d7d7;
+}
+
+.summary-row i {
+  color: #d4a017;
+  margin-right: 8px;
+}
+
+.summary-row strong {
+  text-align: right;
+}
+
+.summary-total {
+  margin: 28px 35px;
+  padding: 24px;
+  background-color: #d4a017;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-total span {
+  font-weight: 800;
+}
+
+.summary-total strong {
+  font-size: 1.45rem;
+  font-weight: 900;
+}
+
+.summary-note {
+  padding: 0 35px 35px;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+}
+
+.summary-note i {
+  color: #d4a017;
+  margin-right: 8px;
+}
+
+@media (max-width: 991px) {
+  .booking-summary {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+.booking-form-card {
+  background-color: #fff;
+  border: 1px solid rgba(212, 160, 23, 0.25);
+  border-top: 6px solid #d4a017;
+  overflow: hidden;
+}
+
+.booking-form-head {
+  padding: 32px 38px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 160, 23, 0.12),
+    rgba(255, 255, 255, 1)
+  );
+  border-bottom: 1px solid #eee;
+}
+
+.form-label-gold {
+  display: inline-block;
+  color: #d4a017;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.booking-form-body {
+  padding: 38px;
+}
+
+.booking-form-card .form-label {
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.input-icon-wrap {
+  position: relative;
+}
+
+.input-icon-wrap i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4a017;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.input-icon-wrap .form-control,
+.input-icon-wrap .form-select {
+  border-radius: 0;
+  min-height: 54px;
+  padding-left: 45px;
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+.input-icon-wrap .form-control:focus,
+.input-icon-wrap .form-select:focus {
+  border-color: #d4a017;
+  box-shadow: 0 0 0 0.15rem rgba(212, 160, 23, 0.18);
+}
+
+.booking-submit {
+  color: #111;
+  letter-spacing: 0.4px;
+}
+
+.booking-form-head,
+.booking-form-body {
+  padding: 26px;
+}
+
+@media (max-width: 768px) {
+  .top-socials {
+    display: none;
+  }
+
+  .top-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px !important;
+  }
+}
+
+/* PHONE RESPONSIVENESS */
+
+/* Phone view */
+@media (max-width: 576px) {
+  .top-socials {
+    display: none;
+  }
+
+  .top-bar {
+    font-size: 0.82rem;
+    padding: 8px 0;
+  }
+
+  .top-bar-inner {
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  .top-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px !important;
+    text-align: center;
+    flex-wrap: wrap !important;
+  }
+
+  .top-divider {
+    display: none;
+  }
+
+  .top-bar a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .navbar-brand img {
+    max-width: 90px;
+    height: auto;
+  }
+
+  over-flow-correction html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  section {
+    overflow-x: hidden;
+  }
+
+  .container,
+  .container-fluid {
+    max-width: 100%;
+  }
+
+  .email-break,
+  a[href^="mailto:"] {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .btn {
+    white-space: normal;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .summary-top,
+  .summary-list {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .summary-room,
+  .summary-total {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .summary-total {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
